@@ -72,9 +72,10 @@ section {
 
 /* Home Section */
 .home-section {
-    background-image: url('path-to-your-background-image.jpg'); /* Replace with your image path */
+    background-image: url('images/bck-clouds.jpg');
     background-size: cover;
     background-position: center;
+    min-height: 100vh; /* Adjust as per your design */
 }
 
 /* Responsive Design */
