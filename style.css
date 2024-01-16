@@ -129,3 +129,37 @@ section {
     width: 800px; /* Adjust the size as needed */
     height: auto;
 }
+
+/* Project Section */
+.black-section {
+    background-image: url('images/bck-black.jpeg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center; /* Center-align content */
+    padding-top: 20px; /* Adjust as needed */
+    min-height: 100vh; /* Make it cover full viewport height */
+}
+
+.section-title {
+    font-family: 'TheHellClub1-Regular', sans-serif; /* Your custom font */
+    text-align: center; /* Center the title */
+    margin-top: 20px; /* Adjust as needed for spacing from the top of the section */
+    font-size: 3em; /* Adjust the font size as needed */
+}
+
+.white-title {
+    color: white; /* White font color for certain sections */
+}
+
+.black-title {
+    color: black; /* Black font color for the rest */
+}
+
+.contact-section {
+    background-image: url('images/bck-faces.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center; /* Center-align content */
+    padding-top: 20px; /* Adjust as needed */
+    min-height: 100vh; /* Make it cover full viewport height */
+}
