@@ -1,3 +1,5 @@
+/* style.css */
+
 /* General Reset */
 * {
     margin: 0;
@@ -72,17 +74,46 @@ section {
 
 /* Home Section */
 .home-section {
-    background-image: url('images/bck-clouds.jpg');
+    background-image: url('images/bck-clouds.jpg'); /* Your background image */
     background-size: cover;
     background-position: center;
-    min-height: 100vh; /* Adjust as per your design */
+    text-align: center; /* Center-align content */
+    padding-top: 20px; /* Adjust as needed */
+    min-height: 100vh; /* Make it cover full viewport height */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
+
+.logo-container img {
+    max-width: 800px; /* Adjust the size of the logo */
+    height: auto; /* Maintain the aspect ratio of the logo */
+    padding-top: 50px;
 }
 
-/* Add more responsive styles as needed */
+.main-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0; /* Adjust spacing around the menu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu ul li {
+    margin: 0 50px;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: #333; /* Adjust the text color as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+@font-face {
+    font-family: 'TheHellClub1-Regular';
+    src: url('fonts/TheHellClub1-Regular.woff2') format('woff2');
+}
+
+.main-menu ul li a {
+    font-family: 'TheHellClub1-Regular', sans-serif;
+    /* ... other styles ... */
+}
