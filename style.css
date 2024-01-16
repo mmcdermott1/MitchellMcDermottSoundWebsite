@@ -47,22 +47,24 @@ nav a {
 .music-dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: transparent;
+    min-width: 240px;
     z-index: 1;
+    left: 50%; /* Start the dropdown halfway across the 'Music' item */
+    transform: translateX(-50%); /* Shift the dropdown back to the left by half of its own width */
 }
 
 .music-dropdown-content a {
-    color: black;
+    color: black; /* Adjust as needed */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-}
-
+    }
+    
 .music-dropdown:hover .music-dropdown-content {
     display: block;
 }
+
 
 /* Section Styling */
 section {
