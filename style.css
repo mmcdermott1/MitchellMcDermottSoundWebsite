@@ -115,9 +115,13 @@ section {
     src: url('fonts/TheHellClub1-Regular.woff2') format('woff2');
 }
 
+.hellclub-font {
+    font-family: 'TheHellClub1-Regular', sans-serif;
+    font-weight: bolder;
+}
+
 .main-menu ul li a {
     font-family: 'TheHellClub1-Regular', sans-serif;
-    /* ... other styles ... */
 }
 
 .face-overlay {
@@ -219,4 +223,66 @@ transition: opacity 0.3s ease;
 .grid-item:hover img {
 opacity: 1.0;
 transition: opacity 0.3s ease;
+}
+
+.about-section {
+    background-color: white; /* Plain white background */
+    text-align: center; /* Center-align the content */
+    padding: 20px; /* Add some padding */
+    font-family: 'Futura Light', Arial, sans-serif;
+}
+
+.about-subsection {
+    background-image: url('images/bck-clouds.jpg'); /* Your background image */
+    margin: 20px auto; /* Center the subsection and add some margin */
+    padding: 30px; /* Padding inside the subsection */
+    width: 100%; /* Adjust the width as needed */
+    border-radius: 5px; /* Optional: rounded corners */
+    font-size: 1.1em; /* Slightly larger font size for emphasis */
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: 'Futura Light';
+    src: url('fonts/futura-light.woff2') format('woff2');
+}
+
+.about-main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 20px;
+}
+
+.about-main-content p {
+    margin-bottom: 15px; /* Add space between paragraphs */
+}
+
+.about-main-content ul {
+    list-style-type: disc; /* Style for bullet points */
+    margin-left: 50px; /* Indent the list */
+    margin-bottom: 15px; /* Space after the list */
+}
+
+.about-main-content li {
+    margin-bottom: 0px; 
+}
+
+.about-main-content a {
+    color: inherit; /* Inherits the color from the parent element */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Adds bold font weight */
+}
+
+.about-main-content strong {
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .about-main-content {
+        max-width: 90%; /* Adjust width for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
 }
