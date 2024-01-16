@@ -119,3 +119,13 @@ section {
     font-family: 'TheHellClub1-Regular', sans-serif;
     /* ... other styles ... */
 }
+
+.face-overlay {
+    position: inherit;
+    z-index: 2; /* Ensures it's above the background */
+}
+
+.face-overlay img {
+    width: 800px; /* Adjust the size as needed */
+    height: auto;
+}
