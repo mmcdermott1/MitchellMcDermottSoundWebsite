@@ -8,17 +8,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-}
-
-/* Header Styling */
-header {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    font-family: 'Futura Light';
 }
 
 .logo img {
@@ -86,7 +76,7 @@ section {
 
 
 .logo-container img {
-    max-width: 800px; /* Adjust the size of the logo */
+    max-width: 900px; /* Adjust the size of the logo */
     height: auto; /* Maintain the aspect ratio of the logo */
     padding-top: 50px;
 }
@@ -107,7 +97,7 @@ section {
 .main-menu ul li a {
     text-decoration: none;
     color: #333; /* Adjust the text color as needed */
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 30px; /* Adjust the font size as needed */
 }
 
 @font-face {
@@ -147,8 +137,9 @@ section {
 .section-title {
     font-family: 'TheHellClub1-Regular', sans-serif; /* Your custom font */
     text-align: center; /* Center the title */
-    margin-top: 20px; /* Adjust as needed for spacing from the top of the section */
-    font-size: 3em; /* Adjust the font size as needed */
+    /* margin-top: 20px; */
+    margin: 30px;
+    font-size: 4em; /* Adjust the font size as needed */
 }
 
 .white-title {
@@ -172,8 +163,9 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-gap: 20px; /* Space between grid items */
-    padding: 20px;
-    margin: 5%;
+    /* padding: 20px; */
+    /* margin: 5%; */
+    margin: 0 15%;
 }
 
 .grid-item {
@@ -234,9 +226,10 @@ transition: opacity 0.3s ease;
 
 .about-subsection {
     background-image: url('images/bck-clouds.jpg'); /* Your background image */
-    margin: 20px auto; /* Center the subsection and add some margin */
-    padding: 30px; /* Padding inside the subsection */
-    width: 100%; /* Adjust the width as needed */
+    margin: 20px auto;
+    padding: 30px; 
+    max-width: 800px;
+    width: 100%;
     border-radius: 5px; /* Optional: rounded corners */
     font-size: 1.1em; /* Slightly larger font size for emphasis */
     font-style: italic; 
@@ -254,6 +247,7 @@ transition: opacity 0.3s ease;
     line-height: 1.6;
     text-align: justify;
     padding: 20px;
+    font-family: 'Futura Light', Arial, sans-serif;
 }
 
 .about-main-content p {
