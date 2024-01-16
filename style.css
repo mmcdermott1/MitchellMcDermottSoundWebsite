@@ -12,7 +12,8 @@ body {
 }
 
 .logo img {
-    height: 50px; /* Adjust the size of your logo */
+    height: 50px;
+    /* Adjust the size of your logo */
 }
 
 nav ul {
@@ -38,19 +39,22 @@ nav a {
     display: none;
     position: absolute;
     background-color: transparent;
-    min-width: 240px;
+    min-width: 300px;
     z-index: 1;
-    left: 50%; /* Start the dropdown halfway across the 'Music' item */
-    transform: translateX(-50%); /* Shift the dropdown back to the left by half of its own width */
+    left: 50%;
+    /* Start the dropdown halfway across the 'Music' item */
+    transform: translateX(-50%);
+    /* Shift the dropdown back to the left by half of its own width */
 }
 
 .music-dropdown-content a {
-    color: black; /* Adjust as needed */
+    color: black;
+    /* Adjust as needed */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    }
-    
+}
+
 .music-dropdown:hover .music-dropdown-content {
     display: block;
 }
@@ -59,32 +63,33 @@ nav a {
 /* Section Styling */
 section {
     padding: 20px;
-    min-height: 300px; /* Adjust based on content */
+    min-height: 300px;
 }
-
-/* Add specific styles for each section here, like background colors or images */
 
 /* Home Section */
 .home-section {
-    background-image: url('images/bck-clouds.jpg'); /* Your background image */
+    background-image: url('images/bck-clouds.jpg');
     background-size: cover;
     background-position: center;
-    text-align: center; /* Center-align content */
-    padding-top: 20px; /* Adjust as needed */
-    min-height: 100vh; /* Make it cover full viewport height */
+    text-align: center;
+    padding-top: 20px;
+    min-height: 100vh;
 }
 
 
 .logo-container img {
-    max-width: 900px; /* Adjust the size of the logo */
-    height: auto; /* Maintain the aspect ratio of the logo */
+    max-width: 900px;
+    /* Adjust the size of the logo */
+    height: auto;
+    /* Maintain the aspect ratio of the logo */
     padding-top: 50px;
 }
 
 .main-menu ul {
     list-style-type: none;
     padding: 0;
-    margin: 20px 0; /* Adjust spacing around the menu */
+    margin: 20px 0;
+    /* Adjust spacing around the menu */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,8 +101,10 @@ section {
 
 .main-menu ul li a {
     text-decoration: none;
-    color: #333; /* Adjust the text color as needed */
-    font-size: 30px; /* Adjust the font size as needed */
+    color: #333;
+    /* Adjust the text color as needed */
+    font-size: 30px;
+    /* Adjust the font size as needed */
 }
 
 @font-face {
@@ -116,53 +123,70 @@ section {
 
 .face-overlay {
     position: inherit;
-    z-index: 2; /* Ensures it's above the background */
+    z-index: 2;
+    /* Ensures it's above the background */
 }
 
 .face-overlay img {
-    width: 800px; /* Adjust the size as needed */
+    width: 800px;
+    /* Adjust the size as needed */
     height: auto;
 }
 
 /* Project Section */
 .black-section {
-    background-image: url('images/bck-black.jpg'); /* Your background image */
+    background-image: url('images/bck-black.jpg');
+    /* Your background image */
     background-size: cover;
     background-position: center;
-    text-align: center; /* Center-align content */
-    padding-top: 20px; /* Adjust as needed */
-    min-height: 100vh; /* Make it cover full viewport height */
+    text-align: center;
+    /* Center-align content */
+    padding-top: 20px;
+    /* Adjust as needed */
+    min-height: 100vh;
+    /* Make it cover full viewport height */
 }
 
 .section-title {
-    font-family: 'TheHellClub1-Regular', sans-serif; /* Your custom font */
-    text-align: center; /* Center the title */
+    font-family: 'TheHellClub1-Regular', sans-serif;
+    /* Your custom font */
+    text-align: center;
+    /* Center the title */
     /* margin-top: 20px; */
     margin: 30px;
-    font-size: 4em; /* Adjust the font size as needed */
+    font-size: 4em;
+    /* Adjust the font size as needed */
 }
 
 .white-title {
-    color: white; /* White font color for certain sections */
+    color: white;
+    /* White font color for certain sections */
 }
 
 .black-title {
-    color: black; /* Black font color for the rest */
+    color: black;
+    /* Black font color for the rest */
 }
 
 .contact-section {
-    background-image: url('images/bck-faces.jpg'); /* Your background image */
+    background-image: url('images/bck-faces.jpg');
+    /* Your background image */
     background-size: cover;
     background-position: center;
-    text-align: center; /* Center-align content */
-    padding-top: 20px; /* Adjust as needed */
-    min-height: 100vh; /* Make it cover full viewport height */
+    text-align: center;
+    /* Center-align content */
+    padding-top: 20px;
+    /* Adjust as needed */
+    min-height: 100vh;
+    /* Make it cover full viewport height */
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-gap: 20px; /* Space between grid items */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    grid-gap: 20px;
+    /* Space between grid items */
     /* padding: 20px; */
     /* margin: 5%; */
     margin: 0 15%;
@@ -179,60 +203,71 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block; /* Remove any space below the image */
+    display: block;
+    /* Remove any space below the image */
     opacity: 0.6;
     /* transition: opacity 0.3s ease; */
 }
 
 .title-overlay {
     position: absolute;
-    top: 50%; /* Position it at the center vertically */
-    left: 50%; /* Position it at the center horizontally */
-    transform: translate(-50%, -50%); /* Adjust its position to truly center it */
-    width: 100%; /* Make it span the entire width of the grid item */
+    top: 50%;
+    /* Position it at the center vertically */
+    left: 50%;
+    /* Position it at the center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust its position to truly center it */
+    width: 100%;
+    /* Make it span the entire width of the grid item */
     color: white;
     text-align: center;
     padding: 10px 0;
     z-index: 1;
     font-size: 2em;
-    }
-    
+}
+
 .video-link {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 2; 
-    opacity: 0; 
-    }
+    z-index: 2;
+    opacity: 0;
+}
 
 .grid-item:hover .title-overlay {
-opacity: 0;
-transition: opacity 0.3s ease;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .grid-item:hover img {
-opacity: 1.0;
-transition: opacity 0.3s ease;
+    opacity: 1.0;
+    transition: opacity 0.3s ease;
 }
 
 .about-section {
-    background-color: white; /* Plain white background */
-    text-align: center; /* Center-align the content */
-    padding: 20px; /* Add some padding */
+    background-color: white;
+    /* Plain white background */
+    text-align: center;
+    /* Center-align the content */
+    padding: 20px;
+    /* Add some padding */
     font-family: 'Futura Light', Arial, sans-serif;
 }
 
 .about-subsection {
-    background-image: url('images/bck-clouds.jpg'); /* Your background image */
+    background-image: url('images/bck-clouds.jpg');
+    /* Your background image */
     margin: 20px auto;
-    padding: 30px; 
+    padding: 30px;
     max-width: 800px;
     width: 100%;
-    border-radius: 5px; /* Optional: rounded corners */
-    font-size: 1.1em; /* Slightly larger font size for emphasis */
-    font-style: italic; 
+    border-radius: 5px;
+    /* Optional: rounded corners */
+    font-size: 1.1em;
+    /* Slightly larger font size for emphasis */
+    font-style: italic;
 }
 
 @font-face {
@@ -251,23 +286,30 @@ transition: opacity 0.3s ease;
 }
 
 .about-main-content p {
-    margin-bottom: 15px; /* Add space between paragraphs */
+    margin-bottom: 15px;
+    /* Add space between paragraphs */
 }
 
 .about-main-content ul {
-    list-style-type: disc; /* Style for bullet points */
-    margin-left: 50px; /* Indent the list */
-    margin-bottom: 15px; /* Space after the list */
+    list-style-type: disc;
+    /* Style for bullet points */
+    margin-left: 50px;
+    /* Indent the list */
+    margin-bottom: 15px;
+    /* Space after the list */
 }
 
 .about-main-content li {
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
 }
 
 .about-main-content a {
-    color: inherit; /* Inherits the color from the parent element */
-    text-decoration: none; /* Removes underline */
-    font-weight: bold; /* Adds bold font weight */
+    color: inherit;
+    /* Inherits the color from the parent element */
+    text-decoration: none;
+    /* Removes underline */
+    font-weight: bold;
+    /* Adds bold font weight */
 }
 
 .about-main-content strong {
@@ -276,7 +318,48 @@ transition: opacity 0.3s ease;
 
 @media (max-width: 768px) {
     .about-main-content {
-        max-width: 90%; /* Adjust width for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
+        max-width: 90%;
+        /* Adjust width for smaller screens */
+        padding: 10px;
+        /* Adjust padding for smaller screens */
     }
+}
+
+
+.music-for-film-section {
+    background-image: url('images/bck-clouds.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+    /* To handle overflow if necessary */
+}
+
+.video-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Allows for multiple rows of videos */
+    gap: 10px;
+    /* Spacing between videos */
+}
+
+.video-gallery iframe {
+    flex: 1 0 30%;
+    height: 250px;
+}
+
+@media (max-width: 768px) {
+    .video-gallery iframe {
+        flex-basis: 45%;
+        height: 200px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .video-gallery iframe {
+        flex-basis: 90%;
+        height: 150px;
+    }
+
 }
