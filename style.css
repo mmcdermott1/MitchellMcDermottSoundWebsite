@@ -168,19 +168,6 @@ section {
     /* Black font color for the rest */
 }
 
-.contact-section {
-    background-image: url('images/bck-faces.jpg');
-    /* Your background image */
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    /* Center-align content */
-    padding-top: 20px;
-    /* Adjust as needed */
-    min-height: 100vh;
-    /* Make it cover full viewport height */
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -349,7 +336,7 @@ section {
 @media (max-width: 768px) {
     .video-gallery iframe {
         flex-basis: 45%;
-        height: 200px; 
+        height: 200px;
     }
 }
 
@@ -358,4 +345,32 @@ section {
         flex-basis: 90%;
         height: 150px;
     }
+}
+
+.contact-section {
+    background-image: url('images/bck-faces.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.social-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px; /* Adjust based on your preference */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
