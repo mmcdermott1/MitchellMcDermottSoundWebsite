@@ -13,22 +13,40 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 let currentVideoIndex = 0;
 const videos = document.querySelectorAll('.video-wrapper iframe');
+const videoWrapper = document.querySelector('.video-wrapper');
 
-function showVideo(index) {
-    videos.forEach((video, idx) => {
-        video.style.display = idx === index ? 'block' : 'none';
+function stopAllVideos() {
+    videos.forEach(video => {
+        const src = video.src;
+        video.src = src; // Reset the src to stop the video
     });
 }
 
+function updateVideoPosition() {
+    const videoWidth = videos[0].offsetWidth;
+    const newTransformValue = -currentVideoIndex * (videoWidth + 20); // 20 is the margin-right value
+    videoWrapper.style.transform = `translateX(${newTransformValue}px)`;
+}
+
 function nextVideo() {
-    currentVideoIndex = (currentVideoIndex + 1) % videos.length;
-    showVideo(currentVideoIndex);
+    stopAllVideos();
+    if (currentVideoIndex < videos.length - 1) {
+        currentVideoIndex++;
+    } else {
+        currentVideoIndex = 0; // Go to the first video if currently at the last
+    }
+    updateVideoPosition();
 }
 
 function previousVideo() {
-    currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
-    showVideo(currentVideoIndex);
+    stopAllVideos();
+    if (currentVideoIndex > 0) {
+        currentVideoIndex--;
+    } else {
+        currentVideoIndex = videos.length - 1; // Go to the last video if currently at the first
+    }
+    updateVideoPosition();
 }
 
-// Initialize the first video
-showVideo(currentVideoIndex);
+// Initialize the carousel
+updateVideoPosition();

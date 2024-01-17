@@ -1,20 +1,20 @@
 /* style.css */
 
-
-/* TODO:
-* fix height vh issue overlow for projects section
-* improve carousel video gallery
-* fix about subsection width */
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+/* FONTS */
+@font-face {
     font-family: 'Futura Light';
+    src: url('fonts/futura-light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Futura Regular';
+    src: url(fonts/futura-regular.woff2) format('woff2');
 }
 
 @font-face {
@@ -25,6 +25,16 @@ body {
 .hellclub-font {
     font-family: 'TheHellClub1-Regular', sans-serif;
     font-weight: bolder;
+    font-size: larger;
+}
+
+strong{
+    font-family: 'Futura Regular';
+}
+
+/* GLOBAL */
+body {
+    font-family: 'Futura Light';
 }
 
 section {
@@ -37,6 +47,7 @@ section {
     min-height: fit-content;
 }
 
+/* HOME SECTION */
 .home-section {
     background-image: url('images/bck-clouds.jpg');
 }
@@ -54,7 +65,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* z-index: 1; */
 }
 
 .main-menu ul li {
@@ -78,10 +88,9 @@ section {
     position: relative;
 }
 
-
 .music-dropdown-content {
-    visibility: hidden; /* Initially hidden */
-    opacity: 0; /* Initially transparent */
+    visibility: hidden; 
+    opacity: 0;
     position: absolute;
     background-color: transparent;
     min-width: 300px;
@@ -92,10 +101,9 @@ section {
 }
 
 .music-dropdown:hover .music-dropdown-content {
-    visibility: visible; /* Visible on hover */
-    opacity: 1; /* Fully opaque on hover */
+    visibility: visible; 
+    opacity: 1;
 }
-
 
 .music-dropdown-content a {
     color: black;
@@ -112,7 +120,6 @@ section {
     position: inherit;
     z-index: 2;
     transform: translate(20%, 5vh);
-    /* transform: translate(20%, 15%); */
 }
 
 .face-overlay img {
@@ -129,6 +136,7 @@ section {
 
     .main-menu ul li {
         margin: 10px 0; 
+        width: 100%;
     }
 
     
@@ -152,9 +160,11 @@ section {
         bottom: 10px;
         height: auto;
         transform: translate(-40%, -15%);
+        pointer-events: none;
     }
 }
 
+/* SECTION ELEMENTS */
 .black-section {
     background-image: url('images/bck-black.jpg');
 }
@@ -174,6 +184,7 @@ section {
     color: black;
 }
 
+/* PROJECTS SECTION */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
@@ -232,42 +243,31 @@ section {
     opacity: 0;
 }
 
-
-
 @media screen and (max-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
         margin: 0 10%;
     }
+    .grid-item{
+        height: auto;
+    }
 }
 
+/* ABOUT SECTION */
 .about-section {
     background-color: white;
-    /* Plain white background */
-    text-align: center;
-    /* Center-align the content */
     padding: 20px;
-    /* Add some padding */
-    font-family: 'Futura Light', Arial, sans-serif;
 }
 
 .about-subsection {
     background-image: url('images/bck-clouds.jpg');
-    /* Your background image */
     margin: 20px auto;
     padding: 30px;
     max-width: 800px;
     width: 100%;
     border-radius: 5px;
-    /* Optional: rounded corners */
     font-size: 1.1em;
-    /* Slightly larger font size for emphasis */
     font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura Light';
-    src: url('fonts/futura-light.woff2') format('woff2');
 }
 
 .about-main-content {
@@ -277,21 +277,16 @@ section {
     line-height: 1.6;
     text-align: justify;
     padding: 20px;
-    font-family: 'Futura Light', Arial, sans-serif;
 }
 
 .about-main-content p {
     margin-bottom: 15px;
-    /* Add space between paragraphs */
 }
 
 .about-main-content ul {
     list-style-type: disc;
-    /* Style for bullet points */
     margin-left: 50px;
-    /* Indent the list */
     margin-bottom: 15px;
-    /* Space after the list */
 }
 
 .about-main-content li {
@@ -300,53 +295,67 @@ section {
 
 .about-main-content a {
     color: inherit;
-    /* Inherits the color from the parent element */
     text-decoration: none;
-    /* Removes underline */
     font-weight: bold;
-    /* Adds bold font weight */
+    font-style: italic;
+    font-family: 'Futura Regular';
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.about-main-content strong {
-    font-weight: bolder;
+.about-main-content a:hover {
+    opacity: 0.3;
 }
 
 @media (max-width: 768px) {
     .about-main-content {
         max-width: 90%;
-        /* Adjust width for smaller screens */
         padding: 10px;
-        /* Adjust padding for smaller screens */
     }
 }
 
+/* MUSIC FOR FILM SECTION */
 .music-for-film-section {
     background-image: url('images/bck-clouds.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    width: 100%;
     overflow: hidden;
+    position: relative;
+}
+
+.carousel-outer-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    margin: auto;
 }
 
 .carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%; /* Adjust as needed */
-    margin: 0 10%;
+    width: 75%; 
+    overflow: hidden; 
+}
+
+
+.video-wrapper {
+    display: flex; 
+    transition: transform 0.5s ease-in-out; 
+}
+
+.video-wrapper iframe {
+    min-width: 100%; 
+    height: 60vh;
+    margin-right: 20px; 
 }
 
 .arrow {
     cursor: pointer;
-    width: 50px; /* Adjust the width as needed */
-    height: 50px; /* Adjust the height as needed */
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     user-select: none;
     opacity: 1.0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .arrow img {
@@ -354,28 +363,26 @@ section {
     height: auto;
 }
 
-/* Additional styles for hover effect */
 .arrow:hover {
     opacity: 0.3;
 }
 
-.video-wrapper {
-    overflow: hidden;
-    width: 100%; /* Adjust based on the total width of the carousel */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 90%;
+    }
+
+    .video-wrapper iframe {
+        height: 50vh;
+    }
 }
 
-.video-wrapper iframe {
-    width: 100%;
-    height: 60vh;
-}
 
 
+
+/* CONTACT SECTION */
 .contact-section {
     background-image: url('images/bck-faces.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding-top: 20px;
 }
 
 .social-links {
@@ -389,15 +396,16 @@ section {
 }
 
 .social-links img {
-    width: 40px; /* Adjust based on your preference */
+    width: 40px;
     height: auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .social-links a:hover img {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1);
 }
 
+/* FOOTER */
 .site-footer
 {
     background-color: #cbddea; 
@@ -410,8 +418,9 @@ section {
     width: 100%;
 }
 
+/* PARALLAX EFFECT */
 .home-section, .black-section, .music-for-film-section {
-    background-attachment: fixed; /* This creates the parallax effect */
+    background-attachment: fixed; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
