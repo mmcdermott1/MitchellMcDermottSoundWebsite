@@ -1,5 +1,4 @@
 <!-- TODO:
-* implement paralax scrolling for backgrounds
 * improve music for film section
 * improve projects section formatting and resizing
 * fix about subsection width
@@ -223,12 +222,19 @@
     </section>
     <section id="music-for-film" class="music-for-film-section">
         <h2 class="section-title black-title">music for film.</h2>
-        <div class="video-gallery">
-            <iframe src="https://www.youtube.com/embed/LES9nqgeddA?si=1ojZFEy87gx-3iTX" frameborder="0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/aFG-1Vj8Hzw?si=XWknCUb5krMzKEKa" frameborder="0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/NkLinNHdkwk?si=ODww2uMIngXEfhxV" frameborder="0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/UchilwrHXr4?si=FiowL-dGG967b-0f" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="carousel-container">
+            <div class="arrow left-arrow" onclick="previousVideo()">
+                <img src="images/arrow-left.png" alt="Previous">
+            </div>            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/LES9nqgeddA?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/aFG-1Vj8Hzw?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/NkLinNHdkwk?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/UchilwrHXr4?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                
+            </div>
+            <div class="arrow right-arrow" onclick="nextVideo()">
+                <img src="images/arrow-right.png" alt="Next">
+            </div>        </div>
     </section>
     <section id="production" class="black-section">
         <h2 class="section-title white-title">production.</h2>
