@@ -35,6 +35,7 @@ strong{
 /* GLOBAL */
 body {
     font-family: 'Futura Light';
+    overflow-x: hidden;
 }
 
 section {
