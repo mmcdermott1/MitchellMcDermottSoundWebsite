@@ -124,7 +124,7 @@ section {
 .face-overlay {
     position: inherit;
     z-index: 2;
-    /* Ensures it's above the background */
+    transform: translate(20%, 15%);
 }
 
 .face-overlay img {
@@ -385,4 +385,11 @@ section {
     position: relative;
     bottom: 0;
     width: 100%;
-    }
+}
+
+.home-section, .black-section {
+    background-attachment: fixed; /* This creates the parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
