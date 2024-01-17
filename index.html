@@ -1,9 +1,3 @@
-<!-- TODO:
-* improve projects section formatting and resizing
-* fix about subsection width
-* improve overall resizing and responsiveness
- -->
-
 <!-- index.html -->
 
 <!DOCTYPE html>
@@ -26,7 +20,7 @@
                 <li><a href="#projects">projects.
                     </a></li>
                 <li class="music-dropdown">
-                    <a href="javascript:void(0)">music.</a>
+                    <a href="#composition">music.</a>
                     <div class="music-dropdown-content">
                         <a href="#composition">composition.</a>
                         <a href="#music-for-film">music for film.</a>
@@ -42,6 +36,9 @@
         <div class="face-overlay">
             <img src="images/bck-cutout.png" alt="Mitchell McDermott">
         </div>
+        <!-- <div class="arrow down-arrow">
+            <a href="#projects"> <img src="images/arrow-down.png" alt="Down"></a>
+        </div> -->
     </section>
     <section id="projects" class="black-section">
         <h2 class="section-title white-title">projects.</h2>
@@ -215,7 +212,7 @@
     <section id="composition" class="black-section">
         <h2 class="section-title white-title">composition.</h2>
         <div>
-            <iframe width="50%" height="450" scrolling="yes" frameborder="no" allow="autoplay"
+            <iframe width="75%" height="450" scrolling="yes" frameborder="no" allow="autoplay"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1461253522%3Fsecret_token%3Ds-UaNXJKJs5B7&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
         </div>
     </section>
@@ -224,30 +221,38 @@
         <div class="carousel-container">
             <div class="arrow left-arrow" onclick="previousVideo()">
                 <img src="images/arrow-left.png" alt="Previous">
-            </div>            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/LES9nqgeddA?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/aFG-1Vj8Hzw?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/NkLinNHdkwk?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/UchilwrHXr4?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-                
+            </div>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/LES9nqgeddA?rel=0&controls=0&showinfo=0" frameborder="0"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/aFG-1Vj8Hzw?rel=0&controls=0&showinfo=0" frameborder="0"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/NkLinNHdkwk?rel=0&controls=0&showinfo=0" frameborder="0"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/UchilwrHXr4?rel=0&controls=0&showinfo=0" frameborder="0"
+                    allowfullscreen></iframe>
+
             </div>
             <div class="arrow right-arrow" onclick="nextVideo()">
                 <img src="images/arrow-right.png" alt="Next">
-            </div>        </div>
+            </div>
+        </div>
     </section>
     <section id="production" class="black-section">
         <h2 class="section-title white-title">production.</h2>
         <div>
-            <iframe width="50%" height="450" scrolling="yes" frameborder="no" allow="autoplay"
+            <iframe width="75%" height="450" scrolling="yes" frameborder="no" allow="autoplay"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1638458329%3Fsecret_token%3Ds-W1ctXOtSdnU&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
         </div>
     </section>
     <section id="contact" class="contact-section">
         <h2 class="section-title black-title">contact.</h2>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/mitchell-mcdermott-7b934712a/" target="_blank"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://www.linkedin.com/in/mitchell-mcdermott-7b934712a/" target="_blank"><img
+                    src="images/icon-linkedin.svg" alt="LinkedIn"></a>
             <a href="mailto:mitchellmcdermottsound@gmail.com"><img src="images/icon-email.png" alt="Email"></a>
-            <a href="https://www.instagram.com/thehellclubmusic" target="_blank"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+            <a href="https://www.instagram.com/thehellclubmusic" target="_blank"><img src="images/icon-instagram.svg"
+                    alt="Instagram"></a>
             <!-- <a href="https://www.tiktok.com/@thehellclubmusic" target="_blank"><img src="images/icon-tiktok.svg" alt="TikTok"></a> -->
         </div>
     </section>
