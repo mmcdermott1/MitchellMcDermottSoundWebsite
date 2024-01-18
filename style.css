@@ -319,12 +319,12 @@ section {
 @media (max-width: 768px) {
     .about-subsection {
         padding: 10px;
-        font-size: 0.8em;
+        /* font-size: 0.8em; */
     }
     .about-main-content {
         max-width: 90%;
         padding: 10px;
-        font-size: 0.8em;
+        /* font-size: 0.8em; */
     }
     .about-main-content ul {
         margin-left: 10px;
