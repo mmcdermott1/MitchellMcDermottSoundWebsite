@@ -177,6 +177,12 @@ section {
     font-size: 3.5em;
 }
 
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 2.5em;
+    }
+}
+
 .white-title {
     color: white;
 }
@@ -404,6 +410,13 @@ section {
 
 .social-links a:hover img {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .social-links img {
+        width: 30px;
+    }
+    
 }
 
 /* FOOTER */
