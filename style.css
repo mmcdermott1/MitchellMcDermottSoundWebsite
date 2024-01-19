@@ -29,24 +29,20 @@
 }
 
 strong{
-    font-family: 'Futura Regular';
+    font-family: 'Futura Regular', sans-serif;
 }
 
 /* GLOBAL */
 body {
-    font-family: 'Futura Light';
+    font-family: 'Futura Light', sans-serif;
     overflow-x: hidden;
 }
 
 section {
-    /* padding: 20px; */
     padding: 5% 0;
-    /* min-height: 300px; */
-    background-size: cover;
-    background-position: center;
     text-align: center;
     padding-top: 3%;
-    min-height: fit-content;
+    
 }
 
 /* HOME SECTION */
@@ -56,7 +52,6 @@ section {
 
 .logo-container img {
     max-width: 80vw;
-    min-width: 700px;
     height: auto;
 }
 
@@ -114,13 +109,8 @@ section {
     display: block;
 }
 
-.music-dropdown:hover .music-dropdown-content {
-    display: block;
-}
-
 .face-overlay {
     position: inherit;
-    z-index: 2;
     transform: translate(20%, 5vh);
 }
 
@@ -130,58 +120,12 @@ section {
     height: auto;
 }
 
-@media (max-width: 768px) {
-    .main-menu ul {
-        flex-direction: column;
-        padding: 20px 0;
-    }
-
-    .main-menu ul li {
-        margin: 10px 0; 
-        width: 100%;
-    }
-
-    
-    .main-menu ul li a {
-        font-size: 2em; 
-    }
-
-    .music-dropdown-content a {
-        display: none;
-    }
-    
-    .logo-container img {
-        min-width: 90vw;
-    }
-
-    
-    .face-overlay img {
-        position: absolute;
-        width: 60%; 
-        max-width: 400px; 
-        bottom: 10px;
-        height: auto;
-        transform: translate(-40%, -15%);
-        pointer-events: none;
-    }
-}
-
 /* SECTION ELEMENTS */
-.black-section {
-    background-image: url('images/bck-black.jpg');
-}
-
 .section-title {
     font-family: 'TheHellClub1-Regular', sans-serif;
     text-align: center;
     margin-bottom: 2%;
     font-size: 3.5em;
-}
-
-@media screen and (max-width: 768px) {
-    .section-title {
-        font-size: 2.5em;
-    }
 }
 
 .white-title {
@@ -193,6 +137,12 @@ section {
 }
 
 /* PROJECTS SECTION */
+
+.black-section {
+    background-image: url('images/bck-black.jpg');
+    height: fit-content;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
@@ -206,14 +156,14 @@ section {
     cursor: pointer;
     overflow: hidden;
     background-color: black;
-    height: 20vh;
+    height: auto;
 }
 
 .grid-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    object-position: center;
     opacity: 0.6;
     transition: opacity 0.3s ease-in-out;
 }
@@ -231,7 +181,6 @@ section {
     color: white;
     text-align: center;
     padding: 10px 0;
-    z-index: 1;
     font-size: 2em;
     opacity: 1;
     transition: opacity 0.3s ease;
@@ -247,19 +196,7 @@ section {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 2;
     opacity: 0;
-}
-
-@media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-        margin: 0 10%;
-    }
-    .grid-item{
-        height: auto;
-        /* height: 200px */
-    }
 }
 
 /* ABOUT SECTION */
@@ -316,21 +253,6 @@ section {
     opacity: 0.3;
 }
 
-@media (max-width: 768px) {
-    .about-subsection {
-        padding: 10px;
-        /* font-size: 0.8em; */
-    }
-    .about-main-content {
-        max-width: 90%;
-        padding: 10px;
-        /* font-size: 0.8em; */
-    }
-    .about-main-content ul {
-        margin-left: 10px;
-    }
-}
-
 /* MUSIC FOR FILM SECTION */
 .music-for-film-section {
     background-image: url('images/bck-clouds.jpg');
@@ -384,22 +306,11 @@ section {
     opacity: 0.3;
 }
 
-@media (max-width: 768px) {
-    .carousel-container {
-        width: 90%;
-    }
-
-    .video-wrapper iframe {
-        height: 50vh;
-    }
-}
-
-
-
-
 /* CONTACT SECTION */
 .contact-section {
     background-image: url('images/bck-faces.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .social-links {
@@ -422,13 +333,6 @@ section {
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 768px) {
-    .social-links img {
-        width: 30px;
-    }
-    
-}
-
 /* FOOTER */
 .site-footer
 {
@@ -448,4 +352,72 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    .main-menu ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .main-menu ul li {
+        margin: 10px 0; 
+        width: 100%;
+    }
+
+    
+    .main-menu ul li a {
+        font-size: 2em; 
+    }
+
+    .music-dropdown-content a {
+        display: none;
+    }
+    
+    .logo-container img {
+        min-width: 90vw;
+    }
+    
+    .face-overlay img {
+        position: absolute;
+        width: 60%; 
+        max-width: 400px; 
+        bottom: 10px;
+        height: auto;
+        transform: translate(-40%, -15%);
+        pointer-events: none;
+    }
+
+    .section-title {
+        font-size: 2.5em;
+    }
+    
+    .title-overlay {
+        font-size: 1em;
+    }
+
+    .about-subsection {
+        padding: 10px;
+    }
+    .about-main-content {
+        max-width: 90%;
+        padding: 10px;
+    }
+    .about-main-content ul {
+        margin-left: 10px;
+    }
+
+    .carousel-container {
+        width: 90%;
+    }
+
+    .video-wrapper iframe {
+        height: 50vh;
+    }
+    
+    .social-links img {
+        width: 30px;
+    }
+    
 }
