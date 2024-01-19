@@ -77,10 +77,6 @@ section {
     font-family: 'TheHellClub1-Regular', sans-serif;
 }
 
-.main-menu ul li a:hover {
-    opacity: 0.3;
-}
-
 .music-dropdown {
     position: relative;
 }
@@ -95,11 +91,6 @@ section {
     left: 50%;
     transform: translateX(-50%);
     transition: visibility 0.3s, opacity 0.3s ease-in-out;
-}
-
-.music-dropdown:hover .music-dropdown-content {
-    visibility: visible; 
-    opacity: 1;
 }
 
 .music-dropdown-content a {
@@ -168,10 +159,6 @@ section {
     transition: opacity 0.3s ease-in-out;
 }
 
-.grid-item:hover img {
-    opacity: 1.0;
-}
-
 .title-overlay {
     position: absolute;
     top: 50%;
@@ -184,10 +171,6 @@ section {
     font-size: 2em;
     opacity: 1;
     transition: opacity 0.3s ease;
-}
-
-.grid-item:hover .title-overlay {
-    opacity: 0;
 }
 
 .video-link {
@@ -249,10 +232,6 @@ section {
     transition: opacity 0.3s ease-in-out;
 }
 
-.about-main-content a:hover {
-    opacity: 0.3;
-}
-
 /* MUSIC FOR FILM SECTION */
 .music-for-film-section {
     background-image: url('images/bck-clouds.jpg');
@@ -302,10 +281,6 @@ section {
     height: auto;
 }
 
-.arrow:hover {
-    opacity: 0.3;
-}
-
 /* CONTACT SECTION */
 .contact-section {
     background-image: url('images/bck-faces.jpg');
@@ -327,10 +302,6 @@ section {
     width: 40px;
     height: auto;
     transition: transform 0.3s ease-in-out;
-}
-
-.social-links a:hover img {
-    transform: scale(1.1);
 }
 
 /* FOOTER */
@@ -420,4 +391,35 @@ section {
         width: 30px;
     }
     
+}
+
+@media (hover: hover) {
+    .main-menu ul li a:hover {
+        opacity: 0.3;
+    }
+
+    .music-dropdown:hover .music-dropdown-content {
+        visibility: visible; 
+        opacity: 1;
+    }
+
+    .grid-item:hover img {
+        opacity: 1.0;
+    }
+
+    .grid-item:hover .title-overlay {
+        opacity: 0;
+    }
+
+    .about-main-content a:hover {
+        opacity: 0.3;
+    }
+
+    .arrow:hover {
+        opacity: 0.3;
+    }
+
+    .social-links a:hover img {
+        transform: scale(1.1);
+    }
 }
